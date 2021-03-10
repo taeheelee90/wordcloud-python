@@ -40,7 +40,7 @@ with open('./review.txt','w',  -1,  encoding = 'utf-8', newline='') as f:
 
 # Create wordcloud  
 stopwords = set(STOPWORDS) 
-stops = ['I','더','잘','좀']
+stops = ['I','am', 'is']
 for i in range (len(stops)):
     stopwords.add(stops[i])
  
