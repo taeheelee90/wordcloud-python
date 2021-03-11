@@ -11,10 +11,10 @@ driverPath = "./mapApp_reviews/chromedriver.exe" # Chrome Driver path
 driver = webdriver.Chrome(driverPath) # Open Chrome 
 driver.get(url) # Enter the url
 
-# Loop screen scroll to retrieve 1000+ reviews
+# Loop screen scroll to retrieve 500 reviews
 SCROLL_PAUSE_TIME = 1.5 
 
-for i in range(6):    
+for i in range(3):    
     # (1) Scroll down 5 times 
     for j in range(5): 
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
